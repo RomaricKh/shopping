@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from endpoints import app as shopping_app
+from endpoints import router
 
-app = FastAPI()
-app.mount('/shopping', shopping_app)
+app = FastAPI(title="Shopping API")
+app.include_router(router)
