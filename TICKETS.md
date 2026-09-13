@@ -1,5 +1,5 @@
 # 📋 Project Board: `shopping`
-**Current Version:** `v0.1.0` | **Active Branch:** `feat-DM-105-main`
+**Current Version:** `v0.1.0` | **Active Branch:** `feat-DM-106-main`
 
 ---
 ## 🟡 In Progress / Active
@@ -7,6 +7,7 @@
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **DM-101** | Feature | Implementation: Shopping List Manager | backend_dev, frontend_dev, qa_engineer | `feat-DM-101-main` | `main` |
 | **DM-102** | Feature | Implementation: Shopping | backend_dev, frontend_dev, qa_engineer | `feat-DM-102-main` | `main` |
+| **DM-106** | Feature | the shopping project is not compatible with mobile phones and i want to improve it to be compatible with android phones! | backend_dev, frontend_dev, qa_engineer | `feat-DM-106-main` | `main` |
 
 ## 🔴 Open Bugs & Regressions
 | ID | Title | Target Version | Branch | Notes |
