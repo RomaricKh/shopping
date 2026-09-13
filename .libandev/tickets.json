@@ -1,8 +1,89 @@
 {
   "project_name": "shopping",
   "current_version": "v0.1.0",
-  "active_branch": "main",
-  "last_dm_seq": 100,
+  "active_branch": "feat-DM-105-main",
+  "last_dm_seq": 105,
   "last_qa_seq": 200,
-  "tickets": []
+  "tickets": [
+    {
+      "id": "DM-101",
+      "type": "Feature",
+      "title": "Implementation: Shopping List Manager",
+      "status": "IN_PROGRESS",
+      "target_branch": "main",
+      "working_branch": "feat-DM-101-main",
+      "assigned_to": [
+        "backend_dev",
+        "frontend_dev",
+        "qa_engineer"
+      ],
+      "created_at": "2026-09-13T12:54:10.290955Z",
+      "closed_at": null,
+      "notes": ""
+    },
+    {
+      "id": "DM-102",
+      "type": "Feature",
+      "title": "Implementation: Shopping",
+      "status": "IN_PROGRESS",
+      "target_branch": "main",
+      "working_branch": "feat-DM-102-main",
+      "assigned_to": [
+        "backend_dev",
+        "frontend_dev",
+        "qa_engineer"
+      ],
+      "created_at": "2026-09-13T14:02:40.301034Z",
+      "closed_at": null,
+      "notes": ""
+    },
+    {
+      "id": "DM-103",
+      "type": "Feature",
+      "title": "Implementation: Shopping",
+      "status": "CLOSED",
+      "target_branch": "main",
+      "working_branch": "feat-DM-103-main",
+      "assigned_to": [
+        "backend_dev",
+        "frontend_dev",
+        "qa_engineer"
+      ],
+      "created_at": "2026-09-13T14:04:41.722783Z",
+      "closed_at": "2026-09-13T14:04:48.001759Z",
+      "notes": "Fully built, tested, and merged to main."
+    },
+    {
+      "id": "DM-104",
+      "type": "Feature",
+      "title": "Develop the shopping project frontend",
+      "status": "IN_PROGRESS",
+      "target_branch": "main",
+      "working_branch": "feat-DM-104-main",
+      "assigned_to": [
+        "backend_dev",
+        "frontend_dev",
+        "qa_engineer"
+      ],
+      "created_at": "2026-09-13T21:32:29.762621Z",
+      "closed_at": null,
+      "notes": ""
+    },
+    {
+      "id": "DM-105",
+      "type": "Feature",
+      "title": "Marc, proceed to dispatching the work for the shopping project.",
+      "status": "IN_PROGRESS",
+      "target_branch": "main",
+      "working_branch": "feat-DM-105-main",
+      "assigned_to": [
+        "backend_dev",
+        "frontend_dev",
+        "qa_engineer"
+      ],
+      "created_at": "2026-09-13T21:42:33.388253Z",
+      "closed_at": null,
+      "notes": ""
+    }
+  ]
 }
