@@ -17,3 +17,20 @@ def test_create_order():
     response = client.post('/orders', json=order)
     assert response.status_code == 200
     assert response.json()['id'] == 3
+
+def test_get_products():
+    response = client.get('/products')
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
+    assert len(response.json()) >= 2
+
+def test_get_orders():
+    response = client.get('/orders')
+    assert response.status_code == 200
+    assert isinstance(response.json(), list)
+    assert len(response.json()) >= 1
+
+def test_get_nonexistent_product():
+    response = client.get('/products/999')
+    assert response.status_code == 404
+    assert response.json()['detail'] == 'Product not found'
