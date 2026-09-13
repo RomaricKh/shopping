@@ -1,19 +1,37 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import FastAPI, HTTPException
 from models import Product, Order
 
-router = APIRouter()
+app = FastAPI()
 
-PRODUCTS = {
-    1: Product(id=1, name="Product 1", price=10.0),
-    2: Product(id=2, name="Product 2", price=20.0)
-}
+# Mock data
+products = [
+    Product(id=1, name='Laptop', price=1200.00, description='High-performance laptop'),
+    Product(id=2, name='Smartphone', price=800.00, description='Latest smartphone model'),
+]
 
-@router.get('/products/{product_id}', response_model=Product)
-async def get_product(product_id: int):
-    if product_id in PRODUCTS:
-        return PRODUCTS[product_id]
-    raise HTTPException(status_code=404, detail="Product not found")
+orders = [
+    Order(id=1, customer_id=1, products=[products[0]]),
+    Order(id=2, customer_id=2, products=[products[1]]),
+]
 
-@router.post('/orders', response_model=Order)
-async def create_order(order: Order):
-    return order
+@app.get('/products', response_model=list[Product])
+def get_products():
+    return products
+
+@app.get('/orders', response_model=list[Order])
+def get_orders():
+    return orders
+
+@app.get('/products/{product_id}', response_model=Product)
+def get_product(product_id: int):
+    product = next((p for p in products if p.id == product_id), None)
+    if product is None:
+        raise HTTPException(status_code=404, detail='Product not found')
+    return product
+
+@app.get('/orders/{order_id}', response_model=Order)
+def get_order(order_id: int):
+    order = next((o for o in orders if o.id == order_id), None)
+    if order is None:
+        raise HTTPException(status_code=404, detail='Order not found')
+    return order

@@ -1,8 +1,8 @@
 {
   "project_name": "shopping",
   "current_version": "v0.1.0",
-  "active_branch": "feat-DM-105-main",
-  "last_dm_seq": 105,
+  "active_branch": "feat-DM-106-main",
+  "last_dm_seq": 106,
   "last_qa_seq": 200,
   "tickets": [
     {
@@ -84,6 +84,22 @@
       "created_at": "2026-09-13T21:42:33.388253Z",
       "closed_at": "2026-09-13T21:57:07.768265Z",
       "notes": "Merged into main with v1.0.0"
+    },
+    {
+      "id": "DM-106",
+      "type": "Feature",
+      "title": "the shopping project is not compatible with mobile phones and i want to improve it to be compatible with android phones!",
+      "status": "IN_PROGRESS",
+      "target_branch": "main",
+      "working_branch": "feat-DM-106-main",
+      "assigned_to": [
+        "backend_dev",
+        "frontend_dev",
+        "qa_engineer"
+      ],
+      "created_at": "2026-09-13T22:24:42.700541Z",
+      "closed_at": null,
+      "notes": ""
     }
   ]
 }
