@@ -14,9 +14,7 @@ def get_product(product_id):
     response = client.get(f'/products/{product_id}')
     if response.status_code == 200:
         product = response.json()
-        click.echo(f'Product ID: {product["id"]}
-Name: {product["name"]}
-Price: {product["price"]}')
+        click.echo(f"Product ID: {product['id']}\nName: {product['name']}\nPrice: {product['price']}")
     else:
         click.echo('Product not found', err=True)
 
@@ -26,10 +24,10 @@ def create_order(order):
     response = client.post('/orders', json=order)
     if response.status_code == 200:
         order = response.json()
-        click.echo(f'Order ID: {order["id"]}
-Total: {order["total"]}')
+        click.echo(f"Order ID: {order['id']}\nTotal: {order['total']}")
     else:
         click.echo('Failed to create order', err=True)
+
 
 if __name__ == '__main__':
     cli()
