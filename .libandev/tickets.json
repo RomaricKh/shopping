@@ -57,7 +57,7 @@
       "id": "DM-104",
       "type": "Feature",
       "title": "Develop the shopping project frontend",
-      "status": "IN_PROGRESS",
+      "status": "CLOSED",
       "target_branch": "main",
       "working_branch": "feat-DM-104-main",
       "assigned_to": [
@@ -66,14 +66,14 @@
         "qa_engineer"
       ],
       "created_at": "2026-09-13T21:32:29.762621Z",
-      "closed_at": null,
-      "notes": ""
+      "closed_at": "2026-09-13T21:57:07.747044Z",
+      "notes": "Merged into main with v1.0.0"
     },
     {
       "id": "DM-105",
       "type": "Feature",
       "title": "Marc, proceed to dispatching the work for the shopping project.",
-      "status": "IN_PROGRESS",
+      "status": "CLOSED",
       "target_branch": "main",
       "working_branch": "feat-DM-105-main",
       "assigned_to": [
@@ -82,8 +82,8 @@
         "qa_engineer"
       ],
       "created_at": "2026-09-13T21:42:33.388253Z",
-      "closed_at": null,
-      "notes": ""
+      "closed_at": "2026-09-13T21:57:07.768265Z",
+      "notes": "Merged into main with v1.0.0"
     }
   ]
 }
